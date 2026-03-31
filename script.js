@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Scroll Reveal Animation
+
     const reveals = document.querySelectorAll('.reveal');
     
     const revealOnScroll = () => {
@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Initial check
+    revealOnScroll(); 
 
-    // Smooth Scrolling for Navbar Links
+    
     const links = document.querySelectorAll('.nav-links a, .hero-btns a, .logo');
     
     links.forEach(link => {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 if (targetElement) {
                     window.scrollTo({
-                        top: targetElement.offsetTop - 80, // Offset for sticky navbar
+                        top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
                 }
